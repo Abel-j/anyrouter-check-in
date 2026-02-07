@@ -156,9 +156,9 @@ class NotificationKit:
 		for name, func in notifications:
 			try:
 				func()
-				print(f'[{name}]: Message push successful!')
+				print(f'✅ 【{name}】推送成功！')
 			except Exception as e:
-				print(f'[{name}]: Message push failed! Reason: {str(e)}')
+				print(f'❌ 【{name}】推送失败：{str(e)}')
 
 
 notify = NotificationKit()
